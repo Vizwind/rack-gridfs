@@ -68,6 +68,8 @@ module Rack
 
         def headers(file)
 #          { 'Content-Type' => file.content_type }
+          puts '======'
+          puts file.content_type
           { 'Content-Type' => 'image/jpeg'}
         end
 
