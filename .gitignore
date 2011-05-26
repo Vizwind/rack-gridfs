@@ -1,6 +1,8 @@
-rdoc
-pkg
-*.gem
 .bundle
-Gemfile.lock
-coverage
+db/*.sqlite3
+log/*.log
+tmp/**/*
+public/uploads/**/*
+.DS_Store
+.idea
+*.swp

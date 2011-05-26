@@ -67,7 +67,8 @@ module Rack
         end
 
         def headers(file)
-          { 'Content-Type' => file.content_type }
+#          { 'Content-Type' => file.content_type }
+          { 'Content-Type' => 'image/jpeg'}
         end
 
       end
