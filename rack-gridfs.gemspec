@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "rack-gridfs"
 
   s.add_dependency('rack')
+  s.add_development_dependency('bson', '1.6.2')
   s.add_dependency('mongo', '~> 1.2')
   s.add_dependency('mime-types')
 
