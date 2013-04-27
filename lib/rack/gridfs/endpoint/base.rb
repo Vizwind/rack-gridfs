@@ -57,7 +57,7 @@ module Rack
 
         def response_for(file, request)
           if request.env['HTTP_IF_NONE_MATCH'] == file.files_id.to_s || request.env['HTTP_IF_MODIFIED_SINCE'] == file.upload_date.httpdate
-            [304, {'Content-Type' => 'text/plain', 'Etag' => file.files_id.to_s}, ['Not modified']]
+            [304, headers(file), ['Not modified']]
           else
             [ 200, headers(file), file ]
           end
